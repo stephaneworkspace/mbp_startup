@@ -1,5 +1,3 @@
-extern crate chrono;
-
 use std::io::{stdout, Write};
 use curl::easy::Easy;
 
