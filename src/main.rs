@@ -2,7 +2,8 @@ use std::io::{stdout, Write};
 use curl::easy::Easy;
 
 fn execute_startup_command() {
-    let process = std::process::Command::new("/Users/stephane/mbp_startup.sh")
+    let process = std::process::Command::new("sudo")
+    .arg("/Users/stephane/mbp_startup.sh")
         .output()
         .ok()
         .expect("Failed to execute");
