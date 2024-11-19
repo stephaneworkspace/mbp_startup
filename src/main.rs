@@ -92,45 +92,6 @@ fn main() {
 
     let process = std::process::Command::new("/Users/stephane/Backup/vps/ssl-cert-check")
         .arg("-s")
-        .arg("astrologie-traditionnelle.net")
-        .arg("-p")
-        .arg("443")
-        .output()
-        .ok()
-        .expect("Failed to execute");
-    let out = std::string::String::from_utf8(process.stdout)
-        .ok()
-        .expect("Failed to read");
-    println!("{}", out);
-
-    let process = std::process::Command::new("/Users/stephane/Backup/vps/ssl-cert-check")
-        .arg("-s")
-        .arg("www.astrologie-traditionnelle.net")
-        .arg("-p")
-        .arg("443")
-        .output()
-        .ok()
-        .expect("Failed to execute");
-    let out = std::string::String::from_utf8(process.stdout)
-        .ok()
-        .expect("Failed to read");
-    println!("{}", out);
-
-    let process = std::process::Command::new("/Users/stephane/Backup/vps/ssl-cert-check")
-        .arg("-s")
-        .arg("www.numerologie-pratique.net")
-        .arg("-p")
-        .arg("443")
-        .output()
-        .ok()
-        .expect("Failed to execute");
-    let out = std::string::String::from_utf8(process.stdout)
-        .ok()
-        .expect("Failed to read");
-    println!("{}", out);
-
-    let process = std::process::Command::new("/Users/stephane/Backup/vps/ssl-cert-check")
-        .arg("-s")
         .arg("astrologie.bressani.dev")
         .arg("-p")
         .arg("443")
